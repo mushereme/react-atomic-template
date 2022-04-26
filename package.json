@@ -11,6 +11,7 @@
     "netlify-cli": "^2.65.7",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
+    "react-router-dom": "^6.3.0",
     "react-scripts": "3.4.3"
   },
   "scripts": {
@@ -41,5 +42,10 @@
     "collectCoverageFrom": [
       "src/components/**.js"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.5",
+    "postcss": "^8.4.12",
+    "tailwindcss": "^3.0.24"
   }
 }
