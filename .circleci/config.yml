@@ -21,10 +21,8 @@ jobs:
             - v1-dependencies-
 
       - run:
-          name: Install circleci-yarn-upgrade-pr
-          command: |
-            yarn global add circleci-yarn-upgrade-pr
-
+          name: update-npm
+          command: npm install -g npm@latest
 
       - run: npm install
 
