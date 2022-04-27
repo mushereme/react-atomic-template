@@ -20,7 +20,7 @@ jobs:
             # fallback to using the lastest cache if no exact match is found
             - v1-dependencies-
           
-      - run: npm install
+      # - run: npm install
 
       - save_cache:
           paths:
@@ -31,3 +31,5 @@ jobs:
       - run: npm run test
 
       - run: npm run build
+
+      - run: npm run netlify:deploy
