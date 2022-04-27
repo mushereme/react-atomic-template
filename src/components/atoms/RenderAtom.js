@@ -1,7 +1,5 @@
 import React, { lazy } from "react";
 
-import _ from "lodash";
-
 const RenderAtom = ({
   item,
   defaultAtom="text",

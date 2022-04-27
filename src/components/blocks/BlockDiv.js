@@ -14,8 +14,6 @@ const BlockDiv = ({
 }) => {
   if (_.isEmpty(children)) return null;
 
-  const myDivNumber = `${divNamePrefix}${divNumber}`;
-
   const blockProps = {
     className: overrideTailwindClasses(
       `${customClassName || ""} }`
@@ -23,8 +21,7 @@ const BlockDiv = ({
     style: {
       ...customStyle
     },
-    onClick: onClick,
-    ["div-name"]: myDivNumber,
+    onClick: onClick
   };
 
   switch (type) {
