@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
 import Home from './Home';
@@ -11,10 +11,12 @@ const App = () => {
     
   return (
     <Router>  
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route exact path="/aboutus" element={<Aboutus />} />
-      </Routes>
+      <Suspense fallback=""> 
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/aboutus" element={<Aboutus />} />
+        </Routes>
+      </Suspense>
     </Router> 
   )
 }

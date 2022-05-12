@@ -1,15 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Suspense } from "react";
 import * as serviceWorker from "./serviceWorker";
+
+import 'antd/dist/antd.css';
+import './styles/global.css';
 
 import App from "./pages/index";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Suspense fallback="...">
-      <App />
-    </Suspense> 
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 );

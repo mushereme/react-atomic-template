@@ -4,6 +4,9 @@ const RenderMolecule = ({
   moleculeConfig,
   ...props
 }) => {
+
+  debugger;
+
   const moleculeType = moleculeConfig?.type || "MoleculeCard";
 
   const RenderComponent = lazy(() => import(`./${moleculeType}`));

@@ -1,6 +1,7 @@
 import React from "react";
 import _ from "lodash";
 import BlockDiv from "../blocks/BlockDiv";
+import { Button } from "antd";
 import { overrideTailwindClasses } from "tailwind-override";
 
 const AtomText = ({
@@ -20,7 +21,6 @@ const AtomText = ({
 
   // Утга хоосон бол хоосон буцаах
   if(_.isEmpty(value)) return null;
-
   
   return (
     <>
@@ -35,6 +35,7 @@ const AtomText = ({
       >
           {value}
           {children}
+        <Button>hi</Button>
       </BlockDiv>
     </>
   )
